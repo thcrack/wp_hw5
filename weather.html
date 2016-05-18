@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="mycss.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-6">
+      <!-- Large button group -->
+      <div class="btn-group">
+        <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+          <span class="dropDisplay"></span> <span class="caret"></span>
+        </button>
+        <ul id="dropdown" class="dropdown-menu" role="menu"></ul>
+      </div>
+      <div><span class="temperature"></span> &#8451;</div>
+    </div>
+    <div class="col-xs-6">
+      <canvas id="today" width="100" height="100"></canvas>
+      <div class="condition">
+          <span class="date"></span>: <span class="state"></span>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Forecast</div>
+
+            <!-- Table -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="date1"></th>
+                  <th class="date2"></th>
+                  <th class="date3"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="temp1"></td>
+                  <td class="temp2"></td>
+                  <td class="temp3"></td>
+                </tr>
+                <tr>
+                  <td><canvas id="day1" width="64" height="64"></canvas></td>
+                  <td><canvas id="day2" width="64" height="64"></canvas></td>
+                  <td><canvas id="day3" width="64" height="64"></canvas></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+  </div>
+  
+</div>
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script> 
+<script src="http://darkskyapp.github.io/skycons/skycons.js"></script>
+<script src="myapp.js"></script>
+</body>
+</html>
